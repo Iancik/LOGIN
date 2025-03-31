@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.vue";
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Stiluri personalizate pentru autentificare */
+.auth-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+}
+
+.auth-header {
+    background-color: #f8f9fa;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-primary {
+    background-color: #4a6cf7;
+    border-color: #4a6cf7;
+}
+
+.btn-primary:hover {
+    background-color: #3a5bd9;
+    border-color: #3a5bd9;
+}
+
+.auth-form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #f5f8fa;
+}
+
+.form-control:focus {
+    border-color: #4a6cf7;
+    box-shadow: 0 0 0 0.25rem rgba(74, 108, 247, 0.25);
+}
